@@ -1,0 +1,59 @@
+.main{
+background-color: $--black-gray;
+margin-bottom: 160px;
+    &__container{
+        
+        display: grid;
+        grid-template-columns: 1.1fr 1.2fr;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $--yellow;
+        position: relative;
+       
+        // &:after{
+        //     content: url(../images/main-bg.png);
+        //     // background-image: ;
+        //     position: absolute;
+        //     top:0;
+        //     left: -1px;
+        //     width: 100%;
+        //     max-width: 940px;
+        //     height: 100%;
+        //     z-index: 0;
+        //    }
+        &-content{
+            width: 100%;
+            padding: 231px 40px 231px 0;
+            color: $--white;
+            margin-left:-1px ;
+            background-color: $--black-gray;
+            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);            // clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);        //    &::after{
+          
+            
+            &-text{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                position: relative;
+                z-index: 1;
+                max-width: 710px;
+                & p:nth-last-of-type(1){
+                    margin-bottom: 50px;
+                }
+            }
+            & .btn{
+                clip-path: polygon(7% 0, 97% 0, 100% 100%, 0% 100%);
+            }
+        }
+        &-image{
+            max-width: 1010px;
+            width: 100%;
+           min-height: 100%;
+           height: 100%;
+           background: url(../images/main-photo.jpg) center center / cover no-repeat;
+           clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+
+        }
+    }
+}
+

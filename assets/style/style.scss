@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@import './reset.scss';
+@import './root.scss';
+@import './header.scss';
+@import './main-section.scss';
+@import './about-section.scss';
+@import './rent-section.scss';
