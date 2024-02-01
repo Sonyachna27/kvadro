@@ -1,0 +1,65 @@
+.quad,
+.bikes{
+    background-color: $--black-gray;
+    padding-bottom:160px;
+    &__container{
+
+        &-title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 60px;
+
+            @media screen and (max-width:767px) {
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width:367px) {
+                margin-bottom: 20px;
+            }
+            & h2{
+                color: $--white;
+            }
+            & div{
+                padding: 35px 0;
+                max-width: 100%;
+                width: 100%;
+                background-color: $--yellow;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: center;
+                clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
+                & a{
+                    
+                    text-decoration: underline;
+                    display: inline;
+                    font: inherit;
+                    font-weight: 700;
+                }
+            }
+        }
+        &-slider{
+           & .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $--white;
+            padding: 60px;
+            max-width: 100%;
+            width: 100%;
+            min-height: 205px;
+            height: 100%;
+            max-width: 410px;
+            clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+           } 
+        }
+
+    }
+}
+.quad{
+    padding-top: 160px;
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+}
