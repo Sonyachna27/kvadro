@@ -35,6 +35,9 @@
              @media screen and (min-width:1585px) {
                 padding: 100px 70px;
             }
+            @media screen and (max-width:767px) {
+                padding: 30px;
+            }
           
             & h2{
                 margin-bottom: 60px;
@@ -48,10 +51,15 @@
                     margin-bottom: 20px;
                 }
             }
-            & p:not(:nth-last-of-type(1)){
+            & p{
+               &:not(:nth-last-of-type(1)){
                 margin-bottom: 30px;
-            }
+                } 
+        @media screen and (max-width:367px) {
+            font-size: 14px;
         }
+            }
+    }
         &-images{
             display: block;
             min-height: 100%;
