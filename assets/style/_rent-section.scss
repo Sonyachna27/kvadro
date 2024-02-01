@@ -1,33 +1,7 @@
 .rent{
   &__container{
     &-title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 60px;
-        gap: 10px;
-        @media screen and (max-width:1023px) {
-            flex-direction: column;
-        }
-        @media screen and (max-width:767px) {
-            margin-bottom: 40px;
-        }
-        @media screen and (max-width:367px) {
-            margin-bottom: 20px;
-        }
-        & h2{
-            color: $--black;
-        }
-        & p{
-            max-width: 410px;
-            @media screen and (max-width:1023px) {
-                max-width: 100%;
-                text-align: center;
-            }
-            @media screen and (max-width:367px) {
-                font-size: 14;
-            }
-        }
+       @include title;
     }
     &-bottom{
         display: grid;
