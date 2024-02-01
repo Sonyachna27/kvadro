@@ -95,9 +95,11 @@
             .program__container-wrap-tabs.active {
                 display: flex;
               }
-            // #race{
-            //     display: flex;
-            // }
+              .noContent {
+                color: #000 !important;
+                background-color: transparent !important;
+                pointer-events: none;
+              }
         }
     }
 
