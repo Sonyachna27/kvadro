@@ -48,13 +48,16 @@ body{
 
 main{
     margin-top: 120px;
+    @media screen and (max-width:1023px) {
+        margin-top: 80px;
+    }
 }
 
   .container{
-      max-width: 1780px;
+      max-width: 1788px;
       width: 100%;
       margin: 0 auto;
-      padding: 0 10px;
+      padding: 0 14px;
   }
 h1{
     font-family: 'Oswald';
@@ -87,7 +90,7 @@ h3{
     font-weight: 600;
     line-height: normal;
     @media screen and (max-width:767px) {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 
@@ -106,8 +109,6 @@ p{
         font-size: 14px;
     }
 }
-
-
 a{
     font-size: 18px;
     font-style: normal;
@@ -132,9 +133,9 @@ a{
     clip-path: polygon(7% 0, 97% 0, 100% 100%, 0% 100%);
 }
 .btn:hover{
-    background-color: transparent;
-    color: $--white;
-    border-color: #FDCC0A;
+    background-color: #ffd632;
+    
+  
 }
 
 .tabs{
@@ -171,7 +172,7 @@ a{
     background: url('../images/border.svg') center center / contain no-repeat;
    }
 }
-.click{
+.tabs.active{
     color: $--white;
     &:hover{
         color: $--black;
