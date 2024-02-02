@@ -1154,12 +1154,16 @@ a {
   .price__container-info-top {
     grid-template-columns: 1fr;
     gap: 0;
-    background: none;
   }
 }
 .price__container-info-top-image {
   min-height: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .price__container-info-top-image {
+    min-height: 350px;
+  }
 }
 .price__container-info-top-image img {
   -o-object-fit: fill;
@@ -1171,7 +1175,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .price__container-info-top-image img {
-    min-height: 200px;
+    min-height: 250px;
   }
 }
 .price__container-info-top-text {
@@ -1390,7 +1394,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .program__container-wrap-tabs-tab-image {
-    min-height: 250px;
+    min-height: 350px;
   }
 }
 .program__container-wrap-tabs-tab-image img {
@@ -1404,7 +1408,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .program__container-wrap-tabs-tab-image img {
-    min-height: 250px;
+    min-height: 350px;
   }
 }
 .program__container-wrap-tabs-tab-info {
