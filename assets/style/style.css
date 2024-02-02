@@ -719,7 +719,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .about__container-top-images img {
-    min-height: 200px;
+    min-height: 250px;
   }
 }
 .about__container-bottom {
@@ -1399,7 +1399,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .program__container-wrap-tabs-tab-image img {
-    min-height: 200px;
+    min-height: 250px;
   }
 }
 .program__container-wrap-tabs-tab-info {
@@ -1994,6 +1994,8 @@ a {
   display: flex;
   align-items: center;
   gap: 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .footer__container-content-link a svg, .footer__container-content-social a svg {
   min-width: -moz-fit-content;
