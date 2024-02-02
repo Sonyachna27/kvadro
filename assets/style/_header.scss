@@ -209,6 +209,11 @@
                             flex-direction: column;
                             gap: 20px;
                         }
+                        & a {
+                            max-width: fit-content;
+                            width: fit-content;
+                            
+                        }
 
                     }
                 }

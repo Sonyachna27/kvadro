@@ -512,6 +512,12 @@ a {
     gap: 20px;
   }
 }
+.header__container-nav nav ul a {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .main {
   background-color: #232323;
@@ -2008,6 +2014,10 @@ a {
   display: flex;
   align-items: center;
   gap: 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.footer__container-content-link a, .footer__container-content-social a {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
