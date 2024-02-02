@@ -72,6 +72,7 @@
             &-link,
             &-social{
                 & a {
+                    max-width: fit-content;
                     & svg{
                         min-width: fit-content;
                         width: 100%;
