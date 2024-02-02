@@ -4,9 +4,9 @@
       
         &-top{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.05fr .95fr;
         margin-bottom: 80px;
-        gap: 20px;
+        align-items: center;
         @media screen and (max-width:1023px) {
             grid-template-columns: 1fr;
             gap: 0;
@@ -18,7 +18,6 @@
             margin-bottom: 20px;
         }
           &-content{
-            padding: 40px 50px 40px 40px;
             position: relative;
             color: $--white;
             max-width: 100%;
@@ -32,13 +31,14 @@
             line-height: normal;
             background-color: $--black-gray;
             clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);           
-             @media screen and (min-width:1585px) {
-                padding: 100px 70px;
+            padding: 40px;
+          height: fit-content;
+          @media  screen and (max-width:767px) {
+            padding: 20px;
+          }
+            @media screen and (min-width:1591px) {
+                padding: 70px;
             }
-            @media screen and (max-width:767px) {
-                padding: 30px;
-            }
-          
             & h2{
                 margin-bottom: 60px;
                 @media screen and (max-width:1023px) {
@@ -64,11 +64,9 @@
             display: block;
             min-height: 100%;
             height: 100%;
-            transform: scale(1.1);
             z-index: 1;
-            @media screen and (max-width:1023px) {
-                transform: scale(1);
-            }
+            clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+
             & img{
                 object-fit: cover;
                 max-width: 100%;

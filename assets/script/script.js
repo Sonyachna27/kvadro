@@ -1,5 +1,16 @@
-    const loadMoreButton = document.getElementById("loadMore");
+const menuBtn = document.querySelector('.menuBtns');
+const htmlElement = document.querySelector('html');
+const navLinks = document.querySelectorAll('nav a');
+  menuBtn.addEventListener('click' , () => document.querySelector('html').classList.toggle('open'));
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        htmlElement.classList.remove('open');
+    });
+});
 
+
+    const loadMoreButton = document.getElementById("loadMore");
+   
     function hideInitialTabs(container) {
         const tabs = container.querySelectorAll(".program__container-wrap-tabs-tab");
         for (let i = 3; i < tabs.length; i++) {
@@ -8,8 +19,22 @@
     }
     function showContent(contentId) {
         const allContentBlocks = document.querySelectorAll('.program__container-wrap-tabs');
+        
+        const tabsBtns = document.querySelectorAll('.program-race');
+
+tabsBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    tabsBtns.forEach((otherButton) => {
+      otherButton.classList.remove('active');
+    });
+
+    button.classList.add('active');
+  });
+});
+
         allContentBlocks.forEach(block => {
             if (block.id === contentId) {
+
                 block.classList.add('active');
                 hideInitialTabs(block); 
                 let count = 3;
@@ -35,15 +60,11 @@
         slidesPerView: 1,
   spaceBetween: 40,
 
-  // Responsive breakpoints
   breakpoints: {
-    
-      // when window width is >= 480px
       480: {
         slidesPerView: 1,
         spaceBetween: 20
       },
-      // when window width is >= 640px
       640: {
         slidesPerView: 2,
         spaceBetween: 40
@@ -66,15 +87,11 @@
     var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 1,
   spaceBetween: 10,
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
-    
     480: {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    // when window width is >= 640px
     640: {
       slidesPerView: 2,
       spaceBetween: 40
@@ -91,7 +108,6 @@
   mousewheel: {
     invert: true,
   },
-  
   loop: true,
       });
 

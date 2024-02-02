@@ -2,6 +2,12 @@
 .bikes{
     background-color: $--black-gray;
     padding-bottom:160px;
+    @media  screen and (max-width:767px) {
+        padding-bottom: 80px;
+      }
+    @media  screen and (max-width:367px) {
+        padding-bottom: 60px;
+      }
     &__container{
 
         &-title{
@@ -22,7 +28,7 @@
                 color: $--white;
             }
             & div{
-                padding: 35px 0;
+                padding: 35px 10px;
                 max-width: 100%;
                 width: 100%;
                 background-color: $--yellow;
@@ -32,8 +38,11 @@
                 line-height: normal;
                 text-align: center;
                 clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
+
+                @media screen and (max-width:367px) {
+                    font-size: 18px;
+                }
                 & a{
-                    
                     text-decoration: underline;
                     display: inline;
                     font: inherit;
@@ -54,12 +63,24 @@
             height: 100%;
             max-width: 410px;
             clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+
+            @media  screen and (max-width:767px) {
+                padding: 40px;
+              }
+            @media  screen and (max-width:367px) {
+                padding: 20px;
+              }
            } 
         }
-
     }
 }
 .quad{
     padding-top: 160px;
     clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+    @media  screen and (max-width:767px) {
+        padding-top: 80px;
+      }
+    @media  screen and (max-width:367px) {
+        padding-top: 60px;
+      }
 }

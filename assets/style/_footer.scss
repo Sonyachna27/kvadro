@@ -1,0 +1,108 @@
+.footer{
+    background-color: $--black-gray;
+    padding: 100px 0 20px 0;
+    &__container{
+
+        display: grid;
+        grid-template-columns: .1fr .9fr;
+        gap: 20px;
+        margin-bottom: 60px;
+        @media screen and (min-width:1240px) {
+            grid-template-columns: .3fr .7fr;
+        }
+        @media screen and (min-width:1440px) {
+            grid-template-columns: .4fr .6fr;
+        }
+        @media screen and (max-width:1023px) {
+            grid-template-columns: 1fr;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        
+        & .logo{
+            max-width: 110px;
+            width: 100%;
+            max-height: 110px;
+            height: 100%;
+        }
+        &-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            color: $--white;
+            @media screen and (max-width:1023px) {
+                
+                flex-direction: column;
+            }
+            & nav {
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 120px;
+                    row-gap: 15px;
+                    @media screen and (max-width:1023px) {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                    }
+                    & a {
+                        color: inherit;
+                        font: inherit;
+                    }
+                }
+            }
+            &-links{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                max-width: fit-content;
+
+            }
+            &-social{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+
+            }
+            &-link,
+            &-social{
+                & a {
+                    & svg{
+                        min-width: fit-content;
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+    &__copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $--white;
+        position: relative;
+        padding-top: 20px;
+        text-align: center;
+        white-space: wrap;
+        &:before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #7A7A7A;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    }
+
+}
