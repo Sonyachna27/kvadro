@@ -1,6 +1,9 @@
 .footer{
     background-color: $--black-gray;
     padding: 100px 0 20px 0;
+    @media  scrren and (max-width:767px) {
+        padding-top: 50px;
+    }
     &__container{
 
         display: grid;
