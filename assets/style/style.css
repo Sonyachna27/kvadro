@@ -1388,6 +1388,11 @@ a {
   -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
 }
+@media only screen and (max-width: 768px) {
+  .program__container-wrap-tabs-tab-image {
+    min-height: 250px;
+  }
+}
 .program__container-wrap-tabs-tab-image img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1796,9 +1801,7 @@ a {
   background-color: inherit;
 }
 .contacts__container-form form input:not([type=submit]), .contacts__container-form form select, .contacts__container-form form textarea {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  text-align: start;
   background-color: inherit;
   border: none;
   outline: none;
@@ -1845,6 +1848,7 @@ a {
 }
 .contacts__container-form form select {
   position: relative;
+  padding: 20px 40px;
 }
 .contacts__container-form form select:focus {
   color: #FDCC0A;
@@ -1853,11 +1857,17 @@ a {
   color: #FDCC0A;
 }
 .contacts__container-form form select option {
+  padding: 20px 40px;
   font: inherit;
   white-space: nowrap;
   background-color: #1B1B1B;
   font-size: 14px;
   cursor: pointer;
+}
+@media screen and (max-width: 367px) {
+  .contacts__container-form form select option {
+    padding: 20px 0;
+  }
 }
 .contacts__container-form form select option:hover {
   background-color: #bebbbb;
