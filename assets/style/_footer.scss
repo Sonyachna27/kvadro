@@ -69,12 +69,26 @@
                 gap: 15px;
                 max-width: fit-content;
             }
-            &-link,
+            &-link
+                & a {
+                    max-width: fit-content;
+
+                    & svg{
+                        min-width: fit-content;
+                        max-width: 40px;
+                        width: 100%;
+
+                    }
+                }
+            
+          
             &-social{
                 & a {
                     max-width: fit-content;
                     & svg{
-                        min-width: fit-content;
+                        min-width: 50px;
+                        max-width: 50px;
+                        max-height: 50px;
                         width: 100%;
 
                     }
