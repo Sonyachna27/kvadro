@@ -2013,6 +2013,8 @@ a {
   gap: 15px;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .footer__container-content-links a {
   max-width: -moz-fit-content;
