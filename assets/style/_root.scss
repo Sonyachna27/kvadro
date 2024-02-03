@@ -155,12 +155,15 @@ a{
     transition: .5s ease;
     color: $--black;
     
-    &:hover{
-        color: $--white;
-        &::after{
-            background: url('../images/black-border.svg') center center / contain no-repeat;
-           }
+    @media (pointer: fine) {
+        &:hover{
+            color: $--white;
+            &::after{
+                background: url('../images/black-border.svg') center center / contain no-repeat;
+               }
+        } 
     }
+   
    &::after{
     content: '';
     width: 100%;
@@ -174,12 +177,14 @@ a{
 }
 .tabs.active{
     color: $--white;
+    @media (pointer: fine) {
     &:hover{
         color: $--black;
         &::after{
             background: url('../images/border.svg') center center / contain no-repeat;
            }
     }
+}
     &::after{
         content: '';
         width: 100%;
