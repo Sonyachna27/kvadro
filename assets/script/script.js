@@ -174,7 +174,7 @@ let numScroll = () => {
   runAnimations();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
   zeroValues();
   numScroll();
-});
+// });
