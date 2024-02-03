@@ -229,11 +229,13 @@ a {
   transition: 0.5s ease;
   color: #1B1B1B;
 }
-.tabs:hover {
-  color: #fff;
-}
-.tabs:hover::after {
-  background: url("../images/black-border.svg") center center/contain no-repeat;
+@media (pointer: fine) {
+  .tabs:hover {
+    color: #fff;
+  }
+  .tabs:hover::after {
+    background: url("../images/black-border.svg") center center/contain no-repeat;
+  }
 }
 .tabs::after {
   content: "";
@@ -249,11 +251,13 @@ a {
 .tabs.active {
   color: #fff;
 }
-.tabs.active:hover {
-  color: #1B1B1B;
-}
-.tabs.active:hover::after {
-  background: url("../images/border.svg") center center/contain no-repeat;
+@media (pointer: fine) {
+  .tabs.active:hover {
+    color: #1B1B1B;
+  }
+  .tabs.active:hover::after {
+    background: url("../images/border.svg") center center/contain no-repeat;
+  }
 }
 .tabs.active::after {
   content: "";
