@@ -59,10 +59,14 @@
             &-links{
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 15px;
                 max-width: 207px;
                 min-width: fit-content;
                 & a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
                     max-width: 207px;
                     & svg{
                         min-width: fit-content;

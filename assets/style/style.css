@@ -2010,12 +2010,16 @@ a {
 .footer__container-content-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   max-width: 207px;
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
 .footer__container-content-links a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
   max-width: 207px;
 }
 .footer__container-content-links a svg {
