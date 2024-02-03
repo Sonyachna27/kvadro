@@ -2010,9 +2010,8 @@ a {
 .footer__container-content-links {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  gap: 10px;
+  max-width: 207px;
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
