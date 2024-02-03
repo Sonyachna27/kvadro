@@ -2010,22 +2010,21 @@ a {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
+.footer__container-content-links a {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.footer__container-content-links a svg {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 40px;
+}
 .footer__container-content-social {
   display: flex;
   align-items: center;
   gap: 15px;
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-.footer__container-content-link .footer__container-content a {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-.footer__container-content-link .footer__container-content a svg {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  max-width: 40px;
-  width: 100%;
 }
 .footer__container-content-social a {
   max-width: -moz-fit-content;

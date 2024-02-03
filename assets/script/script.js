@@ -7,8 +7,6 @@ const navLinks = document.querySelectorAll('nav a');
         htmlElement.classList.remove('open');
     });
 });
-
-
     const loadMoreButton = document.getElementById("loadMore");
    
     function hideInitialTabs(container) {
@@ -134,3 +132,46 @@ tabsBtns.forEach((button) => {
         });
     });
     
+    let stat = document.getElementsByClassName('stat-value');
+
+let zeroValues = () => {
+  for (let i = 0; i < stat.length; i++) {
+    stat[i].innerHTML = 0;
+  }
+}
+
+let numScroll = () => {
+
+const animationDuration = 2000;
+
+const frameDuration = 1000 / 60;
+const totalFrames = Math.round(animationDuration / frameDuration);
+const easeOutQuad = t => t * (2 - t);
+const animateCountUp = el => {
+  let frame = 0;
+  const countTo = parseInt(el.dataset.target.replace(/,/g, ''), 10);
+  const counter = setInterval( () => {
+    frame++; 
+    const progress = easeOutQuad( frame / totalFrames);
+    const currentCount = Math.round(countTo * progress);
+    if (parseInt(el.innerHTML, 10) !== currentCount) {
+      el.innerHTML = currentCount;
+    }
+    if (frame === totalFrames) {
+      clearInterval(counter);
+      el.innerHTML = el.dataset.target;
+    }
+  }, frameDuration);
+}
+const runAnimations = () => {
+  const countupEls = document.querySelectorAll('.stat-value');
+  countupEls.forEach(animateCountUp);
+  }
+  runAnimations();
+}
+window.addEventListener('DOMContentLoaded', (event) => {
+	zeroValues();
+})
+window.addEventListener('load', (event) => {
+	numScroll();
+});
