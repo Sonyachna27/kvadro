@@ -2011,9 +2011,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 207px;
   min-width: -moz-fit-content;
   min-width: fit-content;
+  max-width: 207px;
+  width: 100%;
 }
 .footer__container-content-links a {
   display: flex;
@@ -2021,11 +2022,12 @@ a {
   justify-content: flex-start;
   gap: 10px;
   max-width: 207px;
+  width: 100%;
 }
 .footer__container-content-links a svg {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  width: 40px;
+  min-width: 30px;
+  max-width: 40px;
+  width: 100%;
 }
 .footer__container-content-social {
   display: flex;
@@ -2037,6 +2039,8 @@ a {
 .footer__container-content-social a {
   max-width: -moz-fit-content;
   max-width: fit-content;
+  max-width: 50px;
+  width: 100%;
 }
 .footer__container-content-social a svg {
   min-width: 50px;
