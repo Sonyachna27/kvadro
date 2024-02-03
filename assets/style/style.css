@@ -2017,8 +2017,7 @@ a {
   min-width: fit-content;
 }
 .footer__container-content-links a {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 207px;
 }
 .footer__container-content-links a svg {
   min-width: -moz-fit-content;

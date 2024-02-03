@@ -63,13 +63,12 @@
                 max-width: fit-content;
                 min-width: fit-content;
                 & a {
-                    max-width: fit-content;
+                    max-width: 207px;
                     & svg{
                         min-width: fit-content;
                     width: 40px;
                     }
                 }
-
             }
             &-social{
                 display: flex;
@@ -87,7 +86,6 @@
                     }
                 }
             }
-           
         }
     }
     &__copy{
