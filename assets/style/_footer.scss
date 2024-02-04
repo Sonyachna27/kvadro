@@ -1,7 +1,7 @@
 .footer{
     background-color: $--black-gray;
     padding: 100px 0 20px 0;
-    @media  scrren and (max-width:767px) {
+    @media  screen and (max-width:767px) {
         padding-top: 50px;
     }
     &__container{
@@ -52,6 +52,10 @@
                     @media screen and (max-width:1023px) {
                         grid-template-columns: 1fr;
                         gap: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
                     }
                     & a {
                         color: inherit;
@@ -67,6 +71,7 @@
                 max-width: 210px;
                 width: 100%;
                 text-wrap: nowrap;
+                white-space: nowrap;
                 
                 & a {
                     display: flex;
@@ -75,6 +80,8 @@
                     gap: 10px;
                     max-width: 210px;
                     width: 100%;
+                    white-space: nowrap;
+                    text-wrap: nowrap;
                     & svg{
                         min-width: 30px;
                         max-width: 40px;
