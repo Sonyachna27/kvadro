@@ -1905,8 +1905,15 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-right: 10px;
   -webkit-clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%);
+}
+@media screen and (max-width: 1240px) {
+  .contacts__container-contact div {
+    gap: 30px;
+    font-size: 22px;
+  }
 }
 @media screen and (max-width: 767px) {
   .contacts__container-contact div {
@@ -1928,6 +1935,11 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (max-width: 1240px) {
+  .contacts__container-contact div a, .contacts__container-contact div span {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 767px) {
   .contacts__container-contact div a, .contacts__container-contact div span {
     text-wrap: wrap;
@@ -1948,7 +1960,7 @@ a {
 }
 .footer__container {
   display: grid;
-  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-columns: 0.15fr 0.85fr;
   gap: 20px;
   margin-bottom: 60px;
 }
@@ -1997,6 +2009,12 @@ a {
        column-gap: 120px;
   row-gap: 15px;
 }
+@media screen and (max-width: 1240px) {
+  .footer__container-content nav ul {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .footer__container-content nav ul {
     grid-template-columns: 1fr;
@@ -2013,15 +2031,16 @@ a {
   gap: 15px;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  max-width: 207px;
+  max-width: 210px;
   width: 100%;
+  text-wrap: nowrap;
 }
 .footer__container-content-links a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  max-width: 207px;
+  max-width: 210px;
   width: 100%;
 }
 .footer__container-content-links a svg {
