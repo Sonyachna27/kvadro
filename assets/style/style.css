@@ -541,6 +541,7 @@ a {
 @media screen and (max-width: 1023px) {
   .main__container {
     display: flex;
+    height: 100vh;
   }
 }
 .main__container-content {
@@ -864,7 +865,6 @@ a {
 @media screen and (max-width: 1023px) {
   .rent__container-title p {
     max-width: 100%;
-    text-align: center;
   }
 }
 @media screen and (max-width: 367px) {
@@ -1024,7 +1024,6 @@ a {
 @media screen and (max-width: 1023px) {
   .price__container-title p {
     max-width: 100%;
-    text-align: center;
   }
 }
 @media screen and (max-width: 367px) {
@@ -1165,7 +1164,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .price__container-info-top-image {
-    min-height: 350px;
+    min-height: 250px;
   }
 }
 .price__container-info-top-image img {
@@ -1824,7 +1823,7 @@ a {
   position: relative;
   transition: transform 0.3s ease-in-out;
 }
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 431px) {
   .contacts__container-form form input:not([type=submit]), .contacts__container-form form select, .contacts__container-form form textarea {
     padding: 20px 0;
   }
@@ -1856,6 +1855,11 @@ a {
 .contacts__container-form form select {
   position: relative;
   padding: 20px 40px;
+}
+@media screen and (max-width: 431px) {
+  .contacts__container-form form select {
+    padding: 20px 0;
+  }
 }
 .contacts__container-form form select:focus {
   color: #FDCC0A;
@@ -2056,15 +2060,15 @@ a {
   max-width: fit-content;
 }
 .footer__container-content-social a {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  max-width: 50px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #FDCC0A;
 }
 .footer__container-content-social a svg {
-  min-width: 50px;
-  max-width: 50px;
-  max-height: 50px;
   width: 100%;
 }
 .footer__copy {

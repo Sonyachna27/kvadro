@@ -1,8 +1,12 @@
 .main{
 background-color: $--black-gray;
 margin-bottom: 160px;
+@media screen and (max-width:1023px) {
+    
+}
 @media  screen and (max-width:767px) {
     margin-bottom: 80px;
+    
   }
 @media  screen and (max-width:367px) {
     margin-bottom: 60px;
@@ -16,6 +20,7 @@ margin-bottom: 160px;
         position: relative;
         @media screen and (max-width: 1023px) {
             display: flex;
+            height: 100vh;
         }
         &-content{
             width: 100%;
