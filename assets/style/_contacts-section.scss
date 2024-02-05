@@ -69,9 +69,9 @@ z-index: 1;
                 position: relative;
                 transition: transform 0.3s ease-in-out;
 
-                    @media screen and (max-width:367px) {
-                        padding: 20px 0;
-                    }
+                @media screen and (max-width:431px) {
+                    padding: 20px 0;
+                }
                 &::placeholder{
                     color: $--white;
                     font: inherit;
@@ -92,6 +92,9 @@ z-index: 1;
             & select {
                 position: relative;
                 padding: 20px 40px;
+                @media screen and (max-width:431px) {
+                    padding: 20px 0;
+                }
                 &:focus{
                     color: $--yellow;
                     option{
